@@ -1,0 +1,208 @@
+<!-- record_details_item.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Имя контакта -->
+        <TextView
+            android:id="@+id/textContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Номер телефона -->
+        <TextView
+            android:id="@+id/textPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Тип комнаты -->
+        <TextView
+            android:id="@+id/textRoomType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Описание других комнат -->
+        <TextView
+            android:id="@+id/textOtherRoomDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Room Description"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Адрес -->
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Планировка -->
+        <TextView
+            android:id="@+id/textLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layout"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Количество спальных мест -->
+        <TextView
+            android:id="@+id/textSleepingPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleeping Places"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Центральное отопление -->
+        <TextView
+            android:id="@+id/textCentralHeating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Central Heating"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- AOGV -->
+        <TextView
+            android:id="@+id/textAogv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AOGV"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Теплый пол -->
+        <TextView
+            android:id="@+id/textWarmFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warm Floor"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Электричество -->
+        <TextView
+            android:id="@+id/textElectro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electro"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Бойлер -->
+        <TextView
+            android:id="@+id/textBoiler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boiler"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Время доставки -->
+        <TextView
+            android:id="@+id/textDeliveryTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Time"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Описание других методов доставки -->
+        <TextView
+            android:id="@+id/textOtherDeliveryDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Delivery Description"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Цена -->
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Услуги и коммунальные платежи -->
+        <TextView
+            android:id="@+id/textUtilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilities"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Дети -->
+        <TextView
+            android:id="@+id/textChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Домашние животные -->
+        <TextView
+            android:id="@+id/textPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pets"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Военные -->
+        <TextView
+            android:id="@+id/textContractMilitary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contract Military"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Компания -->
+        <TextView
+            android:id="@+id/textContractCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contract Company"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Дополнительная информация -->
+        <TextView
+            android:id="@+id/textOtherInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Info"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

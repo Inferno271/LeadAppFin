@@ -1,0 +1,353 @@
+<!-- res/layout/activity_owner_form.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Шапка с именем контакта и номером телефона -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите имя контакта"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:id="@+id/textPhoneNumberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Комнаты -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Комнаты]" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioStudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Студия" />
+
+                <RadioButton
+                    android:id="@+id/radio1BHK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1-к квартира" />
+
+                <RadioButton
+                    android:id="@+id/radio2BHK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2-к квартира" />
+
+                <RadioButton
+                    android:id="@+id/radio3BHK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-к квартира" />
+
+                <RadioButton
+                    android:id="@+id/radio4BHK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4-к+ квартира" />
+
+                <!-- Добавьте другие варианты комнат -->
+
+                <RadioButton
+                    android:id="@+id/radioOtherRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Другое" />
+
+                <EditText
+                    android:id="@+id/editOtherRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="Укажите другое количество комнат"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Адрес]" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Введите адрес" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Планировка]" />
+
+            <Spinner
+                android:id="@+id/spinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/layout_options"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Спальные места]" />
+
+            <EditText
+                android:id="@+id/editSleepingPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Введите количество спальных мест" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Отопление]" />
+
+            <CheckBox
+                android:id="@+id/checkCentralHeating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Центральное" />
+
+            <CheckBox
+                android:id="@+id/checkAOGV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="АОГВ" />
+
+            <CheckBox
+                android:id="@+id/checkWarmFloor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Теплые полы" />
+
+            <CheckBox
+                android:id="@+id/checkElectro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Электро " />
+
+            <CheckBox
+                android:id="@+id/checkBoiler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Бойлер" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Срок сдачи]" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioYearRound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Круглый год" />
+
+                <RadioButton
+                    android:id="@+id/radioBeforeSummer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="До лета" />
+
+                <RadioButton
+                    android:id="@+id/radioOtherDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Другое" />
+
+                <EditText
+                    android:id="@+id/editOtherDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="Укажите другой срок"
+                    android:visibility="gone" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Цена]" />
+
+            <EditText
+                android:id="@+id/editPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Введите цену" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[К/У]" />
+
+            <Spinner
+                android:id="@+id/spinnerUtilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/layout_yn"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Дети]" />
+
+            <Spinner
+                android:id="@+id/spinnerChildren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/layout_yn"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Животные]" />
+
+            <Spinner
+                android:id="@+id/spinnerPets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/layout_yn"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Договор]" />
+
+            <CheckBox
+                android:id="@+id/checkContractMilitary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Военный" />
+
+            <CheckBox
+                android:id="@+id/checkContractCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фирма" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="[Прочее]" />
+
+            <EditText
+                android:id="@+id/editOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Введите дополнительную информацию" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Сохранить" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

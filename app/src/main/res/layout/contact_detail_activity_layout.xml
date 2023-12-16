@@ -1,0 +1,39 @@
+<!-- contact_detail_activity_layout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Верхняя часть с именем контакта и номером телефона -->
+    <TextView
+        android:id="@+id/textContactNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textPhoneNumberHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_below="@id/textContactNameHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"/>
+
+
+    <!-- Список записей контакта -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textPhoneNumberHeader"
+        android:paddingTop="16dp" />
+
+    <!-- Дополнительные элементы, если необходимо -->
+
+</RelativeLayout>

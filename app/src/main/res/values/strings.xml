@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LeadAppFin</string>
+
+    <string-array name="layout_options">
+        <item>Смежные</item>
+        <item>Раздельные</item>
+        <item>Смежно-раздельные</item>
+        <!-- Добавьте другие варианты по мере необходимости -->
+    </string-array>
+
+    <string-array name="layout_yn">
+        <item>Да</item>
+        <item>Нет</item>
+
+        <!-- Добавьте другие варианты по мере необходимости -->
+    </string-array>
+
+</resources>

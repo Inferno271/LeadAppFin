@@ -1,0 +1,22 @@
+<!-- record_card_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <!-- Отображение текста записи -->
+    <TextView
+        android:id="@+id/textRecordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record Text"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Дополнительные элементы, такие как дата и тип события, если необходимо -->
+
+</LinearLayout>
